@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Test of markdown</title>
+  <script src="marked/marked.js"></script>
+</head>
 <body>
-<h1>Well now I can at least load the page succefully</h1>
-<p>Now to make a layout</p>
-<p>and post some stuff</p>
+	<div id="content"></div>
+	<script>
+		document.getElementById('content').innerHTML = marked('# Marked in browser\n\nRendered by **marked**.');
+	</script>
 </body>
 
 </html>
