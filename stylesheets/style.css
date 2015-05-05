@@ -32,10 +32,10 @@ html, body, #container {
 	padding: 15px;
 }
 
-#post.h1{
+h1.main{
 	color: #AAAAAA;
 }
 
-#post.p{
+p.main{
 	margin: 10px;
 }
