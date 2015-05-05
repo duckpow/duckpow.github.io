@@ -16,7 +16,7 @@
 			//var whatPost = 'posts/'.concat();
 			client.open('get', '/posts/'.concat(arrayOfPosts[i]) , false);
 			client.send();
-			text = text.concat(" ".concat(client.responseText));
+			text = text.concat(" \n".concat(client.responseText));
 		}
 		document.getElementById('content').innerHTML = marked(text);
 		
