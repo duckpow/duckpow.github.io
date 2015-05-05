@@ -46,8 +46,10 @@ div.main p{
 	margin: 10px;
 }
 
-code {
-	display: block;
-	margin: 30px;
+pre {
 	background-color: #DDDDDD
+}
+
+code {
+	margin: 30px;
 }
