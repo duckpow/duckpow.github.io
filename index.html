@@ -13,7 +13,6 @@
 		var text = "";
 		for(i=0; i < arrayOfPosts.length; i++){
 			var client = new XMLHttpRequest();
-			//var whatPost = 'posts/'.concat();
 			client.open('get', '/posts/'.concat(arrayOfPosts[i]) , false);
 			client.send();
 			text = text.concat(" \n".concat(client.responseText));
