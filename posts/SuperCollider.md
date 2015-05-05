@@ -9,7 +9,7 @@ Because of this I had to plan out what I wanted to do a lot more than I would do
 
 The challenges I faced were not writing the sounds (SynthDef's) for the piece, which were done one at a time in small sketches, but more combining every aspect into one script.
 
-# Live code
+## Live code
 The way I have seen most SC performers work is with 'live coding'. Code is written and evaluated as needed during the performance. This is really awesome. However it has a few limitations:
 > You can only type so fast. Needing a file for a buffer in a tenth subfolder takes a lot of time to write.
 > One spelling error will either mean you code won't get evaluated in time or worse: The code does something unexpected to you.
@@ -18,7 +18,7 @@ The way I have seen most SC performers work is with 'live coding'. Code is writt
 
 For these reasons I choose to write all code in advance.
 
-# What do you need
+## What do you need
 Though the code was written for sound visual feedback is nice. Both for controls and monitoring. SC's classes for writing GUI's is pleasantly flexible, but writing code for many different Synth's can quickly becomes repetitive.
 I choose to avoid trying to 'design' a pretty interface and instead automate the process inspired by a method found in the SuperCollider book:
 Accessing a synthdefs arguments can be done by looking it up in the Synth description Library 'SynthDescLib.global[\mySynth]'. This returns SynthDesc from which we can gain access to the arguments as an array of Strings using '.controlNames'. We could then create a Slider (or Dial or other similar) for each of theses, but we would be missing key data. Like what is the maximum and minimum allowed values. Luckily SC has a way to solve this problem: ControlSpec.
@@ -50,20 +50,20 @@ sliderFabric{
 }
 ``
 
-# Moving to classes
+## Moving to classes
 SC's strong object oriented nature makes it natural to keep a Synth and all its controls within one class instance. As far as I am aware SC does not have a class for this purpose so I had to write one myself.
 Classes for SC is unfortunately lacking good tutorials but are not lacking in incredibly useful features. Looking back at my code my biggest regret is probably not making use of the fact that one Class definition can have multiple constructor methods. I made use of inheritance instead which is a concept I am more familiar with.
 Having to recompile the class library (and by that effectively restarting SC) every time a change is made can be frustrating, but it can however help making sure your non-class code works as a single program.
 
-# Making sure future me won't encounter (too many) errors
+## Making sure future me won't encounter (too many) errors
 I have always thought of working with classes in a non-type-safe languages is inviting errors along. Reusing a class you wrote 10 months back and not remembering if it was ok to pass an integer or if it strictly needed a boolean will probably cause an error. Usually the error message is helpful, but with a little foresight one could write 'myBoolean = myBoolean.asBoolean;' which will turn any SimpleNumber accidentally cast to 'myBoolean' into a Boolean. A Boolean will return itself for the same reasons as 'nil.free' returns 'nil' and not an error.
 The same is true for '.asSymbol' which is used a lot in my code. Reason being that SC's own Classes and methods often use them interchangeably.
 
-# Not needing one monolithic MIDIdef
+## Not needing one monolithic MIDIdef
 One thing I realised creating this performance was that for each parameter I needed midi controls I only needed a few arguments. Utilizing that one can do create as many MIDIdef as one would like as long as they are uniquely named, I create a method to my SuperClass which binds either a particular noteOn or CC message to a Slider or button. The unique name is guaranteed by concatenating the type with its response number. I.e: 'var defName = ("note" ++ number.asString).asSymbol;'
 
 The MIDIdef's connects uses my Class' set method. Which connects to the GUI instead of directly to the Synth using .valueAction thus insuring the GUI is showing the values the Synth are using at any given time.
 An interesting note here is SC's error message if the above action is not scheduled (Using AppClock or similar) which tells you can't change the Sliders value from this Thread.
 
-# All parameters in one place
+## All parameters in one place
 SC's collection of collections is very impressive.
