@@ -47,9 +47,10 @@ div.main p{
 }
 
 pre {
+	padding: 5px;
+	margin: 20px;
 	background-color: #DDDDDD
 }
 
 code {
-	margin: 30px;
 }
