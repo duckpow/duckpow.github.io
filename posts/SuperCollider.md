@@ -26,7 +26,7 @@ By calling '.asSpec' on a symbol we get the corresponding ControlSpec if one exi
 
 'EZSlider' takes it's mappings as a ControlSpec (hurray) and saving the slider in a Dictionary using the argument name as key will make referencing later easy.
 Code:
-```
+```python
 sliderFabric{
 	// create and bind sliders to a synth
 	// Requires its parameters to be registered in ControlSpec. Skips otherwise
