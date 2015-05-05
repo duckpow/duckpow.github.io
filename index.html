@@ -7,17 +7,6 @@
   <script src="marked/marked.js"></script>
 </head>
 <body>
-	<!-- 
-	<div id="container">
-		<div class="span33">
-			<div class="textBox"><h1 id="titel">rants</p></div>
-		</div>
-		<div class="span66">
-			<div id="textBox">
-				<div id="post"></div>
-			</div>
-		</div>
-	</div> -->
 	<div class="span33">
 		<div class="textBox">
 			<h1>Notes on programming</h1>
@@ -28,14 +17,15 @@
 
 	<div class="span66">
 		<div class="textBox">
+			<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it to see this site...</noscript>
 			<div id="post"></div>
 		</div>
 	</div>
 
-	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it to see this site...</noscript>
+	
 	<div id="content"></div>
 	<script>
-		var arrayOfPosts = ['mdTest.md', 'like.md'];
+		var arrayOfPosts = ['mdTest.md', 'like.md', 'SuperCollider.md'];
 		var text = "";
 		for(i=0; i < arrayOfPosts.length; i++){
 			var client = new XMLHttpRequest();
