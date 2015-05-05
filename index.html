@@ -32,8 +32,8 @@
 			client.open('get', '/posts/'.concat(arrayOfPosts[i]) , false);
 			client.send();
 			if(client.status != "404"){
-				var tempText = text.concat(" \n".concat(client.responseText));
-				text = text.concat("<div id=" + arrayOfPosts[i] + ">\n" + tempText + "</div>\n");
+				var tempText = " \n <div id=" + arrayOfPosts[i] + ">\n" + client.responseText + "</div>\n" ;
+				text = text.concat(tempText);
 			}
 		}
 		document.getElementById('post').innerHTML = text //marked(text);
