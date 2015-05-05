@@ -9,12 +9,12 @@
 	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it to see this site...</noscript>
 	<div id="content"></div>
 	<script>
-		var arrayOfPosts = ['posts/mdTest.md'];
+		var arrayOfPosts = ['mdTest.md', 'like.md'];
 		var text = "";
 		for(i=0; i < arrayOfPosts.length; i++){
 			var client = new XMLHttpRequest();
-			//var whatPost = 'posts/'.concat(arrayOfPosts[i]);
-			client.open('get', '/posts/mdTest.md' , false);
+			//var whatPost = 'posts/'.concat();
+			client.open('get', '/posts/'.concat(arrayOfPosts[i]) , false);
 			client.send();
 			text = text.concat(client.responseText);
 		}
