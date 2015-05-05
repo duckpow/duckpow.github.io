@@ -31,7 +31,9 @@
 			var client = new XMLHttpRequest();
 			client.open('get', '/posts/'.concat(arrayOfPosts[i]) , false);
 			client.send();
-			text = text.concat(" \n".concat(client.responseText));
+			if(client.status != "404"){
+				text = text.concat(" \n".concat(client.responseText));
+			}
 		}
 		document.getElementById('post').innerHTML = marked(text);
 		
