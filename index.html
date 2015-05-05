@@ -6,27 +6,15 @@
   <script src="marked/marked.js"></script>
 </head>
 <body>
-	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it...</noscript>
+	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it to see this site...</noscript>
 	<div id="content"></div>
 	<script>
-		function reqListener() {
-			document.getElementById('content').innerHTML = marked(this.responseText)
-		}
-
 		var client = new XMLHttpRequest();
-		//client.onLoad = reqListener;
 		client.open('get', 'mdTest.md', false);
 		client.send();
 		var text = client.responseText;
 		document.getElementById('content').innerHTML = marked(text);
-		// client.onreadystatechange = function() {
-		// 	document.getElementById('content').innerHTML = marked(
-		// 		client.responseText
-		// 		//'# Marked in browser\n\nRendered by **marked**.'
-		// 	);
-			
-		// }
-		//
+		
 	</script>
 </body>
 
