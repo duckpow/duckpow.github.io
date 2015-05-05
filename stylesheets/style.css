@@ -33,9 +33,20 @@ html, body, #container {
 }
 
 div.main h1{
-	color: #AAAAAA;
+	color: #555555;
+	text-decoration: underline;
+}
+
+div.main h2{
+	text-transform: uppercase;
+	font-size: 1.5em;
 }
 
 div.main p{
 	margin: 10px;
+}
+
+code {
+	margin: 30px;
+	background-color: #DDDDDD
 }

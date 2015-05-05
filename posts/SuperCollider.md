@@ -1,5 +1,4 @@
 # Lessons learned from performing with SuperCollider
----
 
 A few weeks back I was asked by a couple of friends to create some ambient textures to a spoken words session. Not wanting to be tied down by the sequencer of my DAW I choose SuperCollider as my tool. I performed with SuperCollider a few days back and that was my first experience using SC live. Everything worked beautifully with no crashes or odd behaviours, thou it took some time to get there:
 
@@ -67,3 +66,5 @@ An interesting note here is SC's error message if the above action is not schedu
 
 ## All parameters in one place
 SC's collection of collections is very impressive.
+
+---
