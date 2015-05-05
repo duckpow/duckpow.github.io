@@ -16,7 +16,7 @@
 			//var whatPost = 'posts/'.concat(arrayOfPosts[i]);
 			client.open('get', 'post/mdTest.md' , false);
 			client.send();
-			text = text.concat(client.responseText;);
+			text = text.concat(client.responseText);
 		}
 		document.getElementById('content').innerHTML = marked(text);
 		
