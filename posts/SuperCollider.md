@@ -67,14 +67,3 @@ An interesting note here is SC's error message if the above action is not schedu
 
 # All parameters in one place
 SC's collection of collections is very impressive.
-
-
-
-
-
-
-
-
-
-Aktivitetsplan:
-lvuhovedstaden@as3.dk
