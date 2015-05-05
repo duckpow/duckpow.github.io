@@ -1,5 +1,6 @@
-
+---
 # Lessons learned from performing with SuperCollider
+---
 
 A few weeks back I was asked by a couple of friends to create some ambient textures to a spoken words session. Not wanting to be tied down by the sequencer of my DAW I choose SuperCollider as my tool. I performed with SuperCollider a few days back and that was my first experience using SC live. Everything worked beautifully with no crashes or odd behaviours, thou it took some time to get there:
 
@@ -11,10 +12,10 @@ The challenges I faced were not writing the sounds (SynthDef's) for the piece, w
 
 ## Live code
 The way I have seen most SC performers work is with 'live coding'. Code is written and evaluated as needed during the performance. This is really awesome. However it has a few limitations:
-> You can only type so fast. Needing a file for a buffer in a tenth subfolder takes a lot of time to write.
-> One spelling error will either mean you code won't get evaluated in time or worse: The code does something unexpected to you.
-> Keeping track of variables can be hard. SC has a great framework for live coding with proxies, patterns and busses. But I found that using the global variables quickly becomes a mess with a lot of variables you just don't need again. (I will come back to this)
-> You are more prone to errors when you are under stress. I am in particular... Combine with any or all of the above and it would spell disaster.
+1. You can only type so fast. Needing a file for a buffer in a tenth subfolder takes a lot of time to write.
+2 One spelling error will either mean you code won't get evaluated in time or worse: The code does something unexpected to you.
+3. Keeping track of variables can be hard. SC has a great framework for live coding with proxies, patterns and busses. But I found that using the global variables quickly becomes a mess with a lot of variables you just don't need again. (I will come back to this)
+4. You are more prone to errors when you are under stress. I am in particular... Combine with any or all of the above and it would spell disaster.
 
 For these reasons I choose to write all code in advance.
 
