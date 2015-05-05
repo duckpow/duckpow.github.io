@@ -18,7 +18,7 @@
 		client.open('get', 'mdTest.md', false);
 		client.send();
 		var text = client.responseText;
-		document.write(text);
+		document.getElementById('content').innerHTML = marked(text);
 		// client.onreadystatechange = function() {
 		// 	document.getElementById('content').innerHTML = marked(
 		// 		client.responseText
