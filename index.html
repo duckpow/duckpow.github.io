@@ -27,13 +27,14 @@
 	<script>
 		var arrayOfPosts = ['mdTest.md', 'like.md', 'SuperCollider.md'];
 		var text = "";
+		var passedText = "";
 		for(i=0; i < arrayOfPosts.length; i++){
 			var client = new XMLHttpRequest();
 			client.open('get', '/posts/'.concat(arrayOfPosts[i]) , false);
 			client.send();
 			if(client.status != "404"){
 				// text = text.concat(" \n".concat(client.responseText));
-				var passedText = marked(text);
+				passedText = marked(text);
 				text = text.concat("<div id=" + arrayOfPosts[i] + ">" + passedText + "</div>");
 			}
 		}
