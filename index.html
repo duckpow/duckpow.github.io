@@ -33,7 +33,7 @@
 			client.send();
 			if(client.status != "404"){
 				var tempText = text.concat(" \n".concat(client.responseText));
-				text = text.concat("<div id=" + arrayOfPosts[i] + ">" + tempText + "</div>");
+				text = text.concat("<div id=" + arrayOfPosts[i] + ">\n" + tempText + "</div>\n");
 			}
 		}
 		document.getElementById('post').innerHTML = text //marked(text);
