@@ -9,15 +9,21 @@
 	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it...</noscript>
 	<div id="content"></div>
 	<script>
-		var client = new XMLHttpRequest();
-		client.open('GET', 'mdTest.md');
-		client.onreadystatechange = function() {
-			document.getElementById('content').innerHTML = marked(
-				client.responseText
-				//'# Marked in browser\n\nRendered by **marked**.'
-			);
-			
+		function reqListener() {
+			document.getElementById('content').innerHTML = marked(this.responseText)
 		}
+
+		var client = new XMLHttpRequest();
+		client.onLoad = reqListener;
+		client.open('get', 'mdTest.md', true);
+		client.send();
+		// client.onreadystatechange = function() {
+		// 	document.getElementById('content').innerHTML = marked(
+		// 		client.responseText
+		// 		//'# Marked in browser\n\nRendered by **marked**.'
+		// 	);
+			
+		// }
 		//
 	</script>
 </body>
