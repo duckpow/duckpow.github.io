@@ -36,6 +36,6 @@ h1.main{
 	color: #AAAAAA;
 }
 
-p.main{
+div.main p{
 	margin: 10px;
 }
