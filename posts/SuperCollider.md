@@ -47,7 +47,7 @@ sliderFabric{
 		});
 	});
 }
-``
+```
 
 ## Moving to classes
 SC's strong object oriented nature makes it natural to keep a Synth and all its controls within one class instance. As far as I am aware SC does not have a class for this purpose so I had to write one myself.
