@@ -17,7 +17,7 @@ html, body, #container {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #507642;
+	background-color: #FFFFFF;
 }
 body > #container {
 	height: auto;
@@ -43,8 +43,11 @@ body > #container {
 .span33 {
 	float: left;
 	width: 33.333%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: #CCCCCC;
+	text-align: right;
 }
 .span66 {
 	float: left;
@@ -61,7 +64,7 @@ body > #container {
 
 #titel {
 	font-size: 56px;
-	color: #507642;
+	color: #222222;
 	/*font-family: 'Fondamento', cursive;*/
 }
 
