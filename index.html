@@ -14,7 +14,7 @@
 		for(i=0; i < arrayOfPosts.length; i++){
 			var client = new XMLHttpRequest();
 			//var whatPost = 'posts/'.concat(arrayOfPosts[i]);
-			client.open('get', 'post/mdTest.md' , false);
+			client.open('get', '/post/mdTest.md' , false);
 			client.send();
 			text = text.concat(client.responseText);
 		}
