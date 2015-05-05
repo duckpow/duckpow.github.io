@@ -13,8 +13,8 @@
 		var text = '';
 		for(i=0; i < arrayOfPosts.length; i++){
 			var client = new XMLHttpRequest();
-			//var whatPost = arrayOfPosts.concat('.md');
-			client.open('get',  arrayOfPosts[i], false);
+			var whatPost = 'posts/'.concat(arrayOfPosts[i]);
+			client.open('get', whatPost , false);
 			client.send();
 			text = text.concat(client.responseText;);
 		}
