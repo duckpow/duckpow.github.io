@@ -32,10 +32,12 @@
 			client.open('get', '/posts/'.concat(arrayOfPosts[i]) , false);
 			client.send();
 			if(client.status != "404"){
-				text = text.concat(" \n".concat(client.responseText));
+				// text = text.concat(" \n".concat(client.responseText));
+				var passedText = marked(text);
+				text = text.concat("<div id=" + arrayOfPosts[i] + ">" + passedText + "</div>");
 			}
 		}
-		document.getElementById('post').innerHTML = marked(text);
+		document.getElementById('post').innerHTML = text //marked(text);
 		
 	</script>
 </body>
