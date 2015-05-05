@@ -31,3 +31,7 @@ html, body, #container {
 .textBox{
 	padding: 15px;
 }
+
+#post h1{
+	color: #AAAAAA;
+}
