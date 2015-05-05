@@ -3,10 +3,22 @@
 <head>
   <meta charset="utf-8"/>
   <title>Test of markdown</title>
-  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <script src="marked/marked.js"></script>
 </head>
 <body>
+	<div id="container">
+		<div id="content">
+			<div class="span33">
+				<div><p>somfing</p></div>
+			</div>
+			<div class="span66">
+				<div id="post"></div>
+			</div>
+		</div>
+	</div>
+
+
 	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it to see this site...</noscript>
 	<div id="content"></div>
 	<script>
@@ -18,7 +30,7 @@
 			client.send();
 			text = text.concat(" \n".concat(client.responseText));
 		}
-		document.getElementById('content').innerHTML = marked(text);
+		document.getElementById('post').innerHTML = marked(text);
 		
 	</script>
 </body>
