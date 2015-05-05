@@ -11,7 +11,7 @@
 	<script>
 		var arrayOfPosts = ['post/mdTest.md'];
 		var text = '';
-		for(i=0; i < arrayOfPosts.length; i++){
+		for(i=0; i < arrayOfPosts.length(); i++){
 			var client = new XMLHttpRequest();
 			//var whatPost = 'posts/'.concat(arrayOfPosts[i]);
 			client.open('get', arrayOfPosts[i] , false);
