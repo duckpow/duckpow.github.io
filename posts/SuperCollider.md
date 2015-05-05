@@ -1,4 +1,3 @@
----
 # Lessons learned from performing with SuperCollider
 ---
 
