@@ -9,10 +9,15 @@
 	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it to see this site...</noscript>
 	<div id="content"></div>
 	<script>
-		var client = new XMLHttpRequest();
-		client.open('get', 'mdTest.md', false);
-		client.send();
-		var text = client.responseText;
+		var arrayOfPosts = ['mdTest.md'];
+		var text = '';
+		for(i=0; i < arrayOfPosts.length; i++){
+			var client = new XMLHttpRequest();
+			//var whatPost = arrayOfPosts.concat('.md');
+			client.open('get',  arrayOfPosts[i], false);
+			client.send();
+			text = text.concat(client.responseText;);
+		}
 		document.getElementById('content').innerHTML = marked(text);
 		
 	</script>
