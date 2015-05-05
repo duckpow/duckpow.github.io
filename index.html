@@ -6,9 +6,16 @@
   <script src="marked/marked.js"></script>
 </head>
 <body>
+	<noscript>Hey. I'm sorry but I am passing markdown with JS and thus need you to enable it...</noscript>
 	<div id="content"></div>
 	<script>
-		document.getElementById('content').innerHTML = marked('# Marked in browser\n\nRendered by **marked**.');
+		var client = new XMLHttpRequest();
+		client.open('GET', 'mdTest.md');
+		client.onreadystatechange = function() {
+			alert(client.responseText);
+		}
+		client.send();
+		//document.getElementById('content').innerHTML = marked('# Marked in browser\n\nRendered by **marked**.');
 	</script>
 </body>
 
