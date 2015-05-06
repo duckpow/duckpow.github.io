@@ -46,6 +46,19 @@ div.main p{
 	margin: 10px;
 }
 
+div#menu p{
+	font-size: 1.3em;
+}
+
+div#menu a{
+	text-decoration: none;
+}
+
+div#menu a:link{
+	background-color: #777777;
+	color: #FFFFFF;
+}
+
 pre {
 	padding: 5px;
 	margin: 20px;
