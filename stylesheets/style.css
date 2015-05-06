@@ -78,11 +78,11 @@ div#menu a:link{
 }
 
 div#menu a:visited{
-	color: #777777;
+	color: #999999;
 }
 
 div#menu a:hover{
-	color: #999999;
+	color: #BBBBBB;
 }
 
 pre {
