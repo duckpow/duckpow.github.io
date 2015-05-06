@@ -37,8 +37,8 @@ html, body, #container {
 	background-color: #777777;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .menuItem:hover{
@@ -48,7 +48,7 @@ html, body, #container {
 div.menuItem p{
 	margin-top: 0;
 	margin-bottom: 0;
-	margin-left: 5px;
+	margin-right: 5px;
 }
 
 div.main h1{
