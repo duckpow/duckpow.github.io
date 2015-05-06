@@ -45,7 +45,7 @@
 			var hl = allHeadlines[i]
 			if(hl.id) {
 				var headerName = hl.innerHTML
-				headlines = headlines + "<p><a href=#" + headerName + ">" + headerName + "</a></p> \n ";
+				headlines = headlines + "<p><a href=#" + headerName.replace(/\s+/g, '-').toLowerCase(); + ">" + headerName + "</a></p> \n ";
 			}
 		}
 		document.getElementById('soonToBeMenu').innerHTML = headlines;
