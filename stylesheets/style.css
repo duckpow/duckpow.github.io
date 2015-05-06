@@ -77,8 +77,12 @@ div#menu a:link{
 	color: #FFFFFF;
 }
 
-div#menu a:hover{
+div#menu a:visited{
 	color: #777777;
+}
+
+div#menu a:hover{
+	color: #999999;
 }
 
 pre {
