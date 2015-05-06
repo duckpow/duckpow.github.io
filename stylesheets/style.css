@@ -45,6 +45,12 @@ html, body, #container {
 	background-color: #555555;
 }
 
+div.menuItem p{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+
 div.main h1{
 	color: #555555;
 	text-decoration: underline;
