@@ -89,3 +89,7 @@ pre {
 
 code {
 }
+
+noscript{
+	font-size: 2em;
+}
