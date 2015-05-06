@@ -18,13 +18,13 @@ First off all Githubs 'hosting' offers only the bare minimum. You can load a sta
 
 I like Markdown. So I would like to write my posts in Markdown. It is easy to use and I don't need to type in a thousand tags. So I checked what the internet says: "Github hosted + Markdown? Use Jekyll!"
 
-I don't want to much hassle with CSS. Because... ! What does the internet say: "Oh... that is easy. There is loads of themes for Jekyll!"
+I don't want too much hassle with CSS. Because... ! So what does the internet say about how to avoid that: "Oh... that is easy. There is loads of themes for Jekyll!"
 
 ##WTH is Jekyll?
 
 In the creators own words "Jekyll is a simple, blog-aware, static site generator". Generator? I'd ask... "Yeah. Just run it every time you want to update your site." Me: "So I need to install it? I already have my computer full of all kind of programs I don't use"
 
-Actually I kind of like the idea of Jekyll and they obviously created a great tool able to help a lot of busy people setting up a quick site. It just seemed to me at the time that I would relinquished a lot of control and structure of the site. Looking at it now, that may have been a good idea to lose that control. But would I have learned anything from that?
+Actually I kind of like the idea of Jekyll and they obviously created a great tool able to help a lot of busy people setting up a quick site. It just seemed to me at the time that I would relinquished a lot of control and structure of the site. Looking at it now it may have been a good idea to lose that control. But would I have learned anything from that?
 
 ##Too late
 
