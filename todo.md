@@ -8,6 +8,8 @@ In Progress:  Make menu
 	DONE: Dynamically create menu links
 	Styling... make it look nice
 
+Make it readable!!!
+
 Write some introductory text
 
 Syntax highligthing for code examples
