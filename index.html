@@ -2,16 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Test of markdown</title>
+  <title>This site seriously need a proper title</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <script src="marked/marked.js"></script>
 </head>
 <body>
 	<div class="span33">
 		<div class="textBox">
-			<h1>Notes on programming</h1>
+			<h1>Title missing</h1>
 			<h2>Written by a musician and chemical engineer</h2>
-			<p>Fill in a few paragraphs about what I do and don't</p>
+			<p>This site will probably mostly contain stuff on SuperCollider and programming music</p>
 		</div>
 		<div class="textBox" id="menu"></div>
 	</div>
@@ -22,7 +22,6 @@
 			<div id="post"></div>
 		</div>
 	</div>
-
 	
 	<div id="content"></div>
 	<script>
@@ -38,14 +37,14 @@
 			}
 		}
 		document.getElementById('post').innerHTML = marked(text);
-		//getting all headlines
+		//getting all headlines and creating menu
 		var allHeadlines = document.getElementsByTagName("h1");
 		var headlines = "";
 		for(i=0; i < allHeadlines.length; i++){
 			var hl = allHeadlines[i]
 			if(hl.id) {
 				var headerName = hl.innerHTML
-				headlines = headlines + "<p><a href=#" + headerName.replace(/\s+/g, '-').toLowerCase() + ">" + headerName + "</a></p> \n ";
+				headlines = headlines + "<a href=#" + headerName.replace(/\s+/g, '-').toLowerCase() + "><div class='menuItem'><p>" + headerName + "</p></div></a> \n ";
 			}
 		}
 		document.getElementById('menu').innerHTML = headlines;

@@ -2,9 +2,11 @@
 
 DONE: handle 404 on XMLHttpRequest()
 
-Find way to handle linking
+DONE: Find way to handle linking
 
-Make menu
+In Progress:  Make menu
+	DONE: Dynamically create menu links
+	Styling... make it look nice
 
 Write some introductory text
 
