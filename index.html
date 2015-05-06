@@ -42,7 +42,10 @@
 		var allHeadlines = document.getElementsByTagName("h1");
 		var headlines = "";
 		for(i=0; i < allHeadlines.length; i++){
-			headlines = headlines + allHeadlines[i].innerHTML + "\n";
+			var hl = allHeadlines[i]
+			if(hl) {
+				headlines = headlines + hl.innerHTML + " \n ";
+			}
 		}
 		document.getElementById('soonToBeMenu').innerHTML = headlines;
 
