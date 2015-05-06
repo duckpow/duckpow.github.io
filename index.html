@@ -44,7 +44,7 @@
 		for(i=0; i < allHeadlines.length; i++){
 			var hl = allHeadlines[i]
 			if(hl.id) {
-				headlines = headlines + hl.innerHTML + " \n ";
+				headlines = headlines + "<p><a href=#>" + hl.innerHTML + "</a></p> \n ";
 			}
 		}
 		document.getElementById('soonToBeMenu').innerHTML = headlines;
