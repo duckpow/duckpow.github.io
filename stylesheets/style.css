@@ -9,6 +9,13 @@ html, body, #container {
 	font-family: sans-serif;
 }
 
+.center {
+	float: center;
+	width: 1280px;
+	height: 100%;
+	overflow: hidden;
+}
+
 .span33 {
 	float: left;
 	width: 33.333%;
